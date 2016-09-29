@@ -1,0 +1,24 @@
+{
+  "name": "classroom-attendance",
+  "version": "1.0.0",
+  "description": "Page for taking attendance in one fictional classroom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikola-jovanovic/classroom-attendance.git"
+  },
+  "keywords": [
+    "attendance",
+    "classroom",
+    "students"
+  ],
+  "author": "Nikola Jovanovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikola-jovanovic/classroom-attendance/issues"
+  },
+  "homepage": "https://github.com/nikola-jovanovic/classroom-attendance#readme"
+}
