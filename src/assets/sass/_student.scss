@@ -1,0 +1,111 @@
+.students-list {
+	text-align: center;
+}
+
+.student-wrapper {
+	display: inline-block;
+	margin-bottom: 30px;
+	padding: 0 15px;
+	vertical-align: top;
+	width: 25%;
+
+	@media screen and (max-width: 900px) {
+		width: 33.33%;
+	}	
+}
+
+.student {
+	background-color: $secondary-color;
+	border: 1px solid #e3e3e3;
+	padding: 15px;
+	position: relative;
+
+	img {
+		border-radius: 50%;
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	h3 {
+		font-size: 1em;
+	}
+
+	.mark-student {
+		background-color: rgba(0, 0, 0, 0.5);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+
+		span {
+			color: #fff;
+			font-size: 2.5em;
+			left: 50%;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		&.marked {
+			background-color: rgba(0, 255, 0, 0.3);
+		}
+	}
+}
+
+.actions {
+	min-height: 25px;
+
+	li {
+		display: inline-block;
+		width: 33.33%;
+	}
+
+	a {
+		@extend .fa;		
+		font-size: 1.5em;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.attendance-info {
+		@extend .fa;
+		font-size: 1.43em;
+		margin: 0;
+
+		&:before {
+			vertical-align: middle;
+		}
+
+		span {
+			font-size: 0.8em;
+			margin-left: 13px;
+			text-transform: capitalize;
+			vertical-align: middle;
+		}
+	}
+
+	.present {
+		@extend .fa-check;
+		color: $present-color;
+	}
+
+	.late {
+		@extend .fa-clock-o;
+		color: $late-color;
+	}
+
+	.absent {
+		@extend .fa-times;
+		color: $absent-color;
+	}
+}

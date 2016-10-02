@@ -1,0 +1,45 @@
+.filter-wrapper {
+	@include clearfix;
+}
+
+.filters {
+	float: right;
+	min-width: 320px;
+
+	ul {
+		margin-bottom: 30px;
+
+		li {
+			margin-bottom: 5px;
+		}
+	}
+
+	a {
+		@include btn-skin;
+	}
+
+	.btn-done {
+		float: right;
+	}
+}
+
+.buttons-row {
+	@include clearfix;
+	margin-bottom: 10px;
+
+	a {
+		margin-right: 10px;
+	}
+
+	ul {
+		margin-top: 10px;
+
+		li {
+			display: inline-block;
+		}
+
+		a {
+			color: #fff;
+		}
+	}
+}

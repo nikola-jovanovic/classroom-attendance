@@ -1,16 +1,11 @@
 module.exports = {
-	DEST: './dist/',
-	SRC: './src/',
-	PATH: '/',
-	PORT: 8080,
-	PROXY: 'localhost',
-	source: function (path) {
-		return this.SRC + path;
+	dest: './dist/',
+	src: './src/',
+	port: 3000,
+	source: function (path = '') {
+		return this.src + path;
 	},
-	destination: function (path) {
-		return this.DEST + path;
-	},
-	absolutePath: function(path){
-		return this.PATH + path;
+	destination: function (path = '') {
+		return this.dest + path;
 	}
 }

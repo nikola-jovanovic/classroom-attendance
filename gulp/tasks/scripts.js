@@ -1,6 +1,7 @@
-var browserify 	= require('browserify');
-var fs 			= require("fs");
+var browserify 	= require('browserify'),
+	fs 			= require("fs");
 
+// Create bundle and compile ES6 and react code
 module.exports = function (gulp, plugins, config) {
 	return function () {
 		browserify(config.source('app/Bootstrap.js'))

@@ -2,6 +2,7 @@ var express 	= require("express"),
 	path		= require('path'),
 	students 	= [];
 
+// Handle server
 module.exports = function (gulp, plugins, config) {
 	return function () {
 		var app = express();
@@ -30,11 +31,9 @@ module.exports = function (gulp, plugins, config) {
 
 		app.get("*", function (req, res) {
 			res.sendFile(path.join(__dirname, '../../dist/index.html'));
-		});
+		});		
 
-		
-
-		var server = app.listen(3000, function () {
+		var server = app.listen(config.port, function () {
 			console.log("Classroom attendance listening on %s...", server.address().port);
 		});
 	};

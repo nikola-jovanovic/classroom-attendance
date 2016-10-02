@@ -1,12 +1,9 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+$fa-font-path:"../fonts/";
+@import "font-awesome/font-awesome";
 
-body {
-	font: 100% $font-stack;
-	color: $primary-color;
-}
-
-p {
-	background-image: url('../img/angelina-jolie.jpg');
-	color: green;
-}
+@import "variables";
+@import "mixins";
+@import "base";
+@import "student";
+@import "filters";
+@import "modal";
